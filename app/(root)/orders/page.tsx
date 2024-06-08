@@ -1,4 +1,4 @@
-// import Search from "@/components/shared/Search";
+import Search from "@/components/shared/Search";
 import { getOrdersByEvent } from "@/lib/actions/order.actions";
 import { formatDateTime, formatPrice } from "@/lib/utils";
 import { SearchParamProps } from "@/types";
@@ -17,7 +17,7 @@ const Orders = async ({ searchParams }: SearchParamProps) => {
       </section>
 
       <section className="wrapper mt-8">
-        {/* <Search placeholder="Search buyer name..." /> */}
+        <Search placeholder="Search buyer name..." />
       </section>
 
       <section className="wrapper overflow-x-auto">
